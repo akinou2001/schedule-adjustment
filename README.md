@@ -1,50 +1,32 @@
-# Welcome to your Expo app 👋
+# 日程調整アプリ
+## 概要
+このアプリは、ユーザーが日程候補を選択し、優先順位や時間帯を設定してリスト化できるシンプルな日程調整ツールです。選択した日程はコピーして他のアプリ（メールやチャットなど）で共有可能です。
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## 主な機能
+### 日程選択
+カレンダーから日付を選択してリストに追加可能。
 
-## Get started
+### 優先順位の設定
+日程に優先順位（第1希望、第2希望など）を自動で割り当て。
 
-1. Install dependencies
+### 時間帯の追加
 
-   ```bash
-   npm install
-   ```
+開始時間と終了時間を選択して日程に設定可能。
 
-2. Start the app
+### コピー機能
+選択した日程リストをクリップボードにコピーして簡単に共有。
 
-   ```bash
-    npx expo start
-   ```
+### カレンダー表示
+iPhoneのカレンダーからイベントを取得して表示（開発中）。
 
-In the output, you'll find options to open the app in a
+## 使用技術
+React Native: クロスプラットフォーム開発。
+Expo: アプリ開発の効率化。
+react-native-calendar-events: カレンダーイベントの取得。
+react-native-gesture-handler: スワイプ操作の実装。
+DateTimePicker: 時間選択機能。
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 今後の予定
+カレンダーイベントの最適化: iPhoneカレンダーのイベントを効率的に表示。
+共有機能の強化: メールやLINEへの直接共有機能。
+デザインの改良: UI/UXの改善。
